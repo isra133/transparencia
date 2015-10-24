@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper formulario">
+		<section class="info">
+			<article class="ml-info">
+				<h1>Solicitud de información</h1>
+				<p>Recuerda que puedes hacer tu petición de forma totalmente anónima</p>
+			</article>
+		</section>
+		<section class="body-form">
+			<div class="msg-form">
+				<p>Si realizas la solicitud de manera anónima no podrás reclamar de manera oficial una respuesta del Ayuntamiento de Madrid.</p>
+				<p>Te recomendamos que lo hagas usando tus datos de solicitante</p>
+				<input type="checkbox" id="acceptAnon">
+				<label for="acceptAnon">Quiero rellenar la solicitud anónimamente</label>
+			</div>
+			<form action="">
+				<h3>Datos del solicitante</h3>
+				<input type="text" placeholder="Nombre y apellidos">
+				<input type="text" placeholder="E-mail">
+				<input type="text" placeholder="Domicilio">
+				<select name="" id="">
+					<option value="">País de origen</option>
+				</select>
+				<h3>Información de la petición</h3>
+				<textarea name="" id="" placeholder="Motivación"></textarea>
+				<textarea name="" id="" placeholder="Cuerpo de la petición" class="cuerpo"></textarea>
+				<div class="fakeinput">
+					<p>Documentación adjunta</p>
+					<input type="file">
+					<a class="seleccionar">Seleccionar</a>
+				</div>
+				<ul class="assets">
+					<li>
+						<a class="delete">x</a>
+						<span>fichero1.pdf</span>
+					</li>
+					<li>
+						<a class="delete">x</a>
+						<span>fichero2.pdf</span>
+					</li>
+				</ul>
+				<h3>Verificación y envío</h3>
+				<div class="captcha">
+						<img src="img/captcha.png" alt="Aqui va el captcha">
+				</div>
+				<input type="text" placeholder="Introduce el texto de la imagen">
+				<input type="submit" class="send" value="Envía tu solicitud">
+			</form>
+		</section>
+	</div>
+	<div class="cover"><!---Esta capa esta oculta se deberia mostrar una vez enviada la solicitud-->
+		<div class="popUp">
+			<span class="tick"></span>
+			<h3>Tu solicitud se ha publicado</h3>
+			<p>Una persona del Ayto. de Madrid revisará personalmente tu solicitud y te dará respuesta lo antes posible.</p>
+			<p>Mientras tanto puedes compartirla en las redes sociales.</p>
+			<a class="twitter">Compartir solicitud</a>
+			<a class="facebook">Compartir solicitud</a>
+		</div>
+	</div>
+</body>
+</html>
