@@ -1,12 +1,23 @@
+/*Estilos que pueda, que se compartan entre views*/
 *{margin: 0;padding: 0;}
 body,html{font-family: 'Helvetica', arial, sans-serif;height: 100%;}
 .wrapper{width: 100%;float: left;}
 section.info{width: 100%;float: left;background:#135F94;padding: 45px 0;box-sizing:border-box;}
+.true{color:#69C768!important;}
+.false{color:#E98484!important;}
+.fakeinput{float: left;width: 100%;position: relative;height: 36px;margin-bottom: 20px;}
+.fakeinput p{width: 100%;border:none;border-bottom: 1px solid rgba(0,0,0,.2);height: 35px;line-height: 35px;font-size: 18px;font-weight: 300;margin-bottom: 20px;color: rgba(0,0,0,0.4);}
+.fakeinput input{position: absolute;right: -25px;top: 10px;opacity: 0;z-index: 2;cursor:pointer;}
+.fakeinput .seleccionar{position: absolute;right: 0;top: 10px;text-transform: uppercase;font-size: 16px;color: #EC8C00;font-weight: bold;cursor:pointer;}
+.twitter{float:left;margin-right: 10px;padding-left: 47px!important;background:#5EB5FF url('../img/twitter.png') 12px center no-repeat;}
+.facebook{float:left;padding-left: 30px!important;background:#5064B7 url('../img/facebook.png') 12px center no-repeat;}
+.clear{clear:both;}
 
+/*PORTADA*/
 .ml-info{width: 1024px;margin: 0 auto;}
 .ml-info > div{width: 50%;float:left;box-sizing:border-box;padding: 20px 36px 0 20px;margin: 0;}
 .ml-info .left{border-right: 2px solid rgba(0,0,0,.1);}
-.ml-info div h1{width: 100%;float: left;text-align: left;font-size: 38px;color: white;font-weight: 300;margin-bottom: 20px;margin-top: -12px;}
+.ml-info > div h1{width: 100%;float: left;text-align: left;font-size: 38px;color: white;font-weight: 300;margin-bottom: 20px;margin-top: -12px;}
 .ml-info .left p{font-size: 16px;color:white;opacity: .6;margin-bottom: 20px;line-height: 22px;}
 .ml-info .right{padding: 20px 20px 0 36px;}
 .ml-info .left a{height: 50px;width: 195px;line-height: 50px;font-size: 18px;text-align: center;float: left;border-radius: 28px;text-decoration: none;color: white;background:#EC8C00;}
@@ -16,35 +27,37 @@ section.info{width: 100%;float: left;background:#135F94;padding: 45px 0;box-sizi
 .ml-info .right p{float: left;width: 100%;font-size: 18px;color: white;margin-bottom: 15px;}
 .ml-info .right h5{float: left;width: 100%;font-size: 16px;color: rgba(255,255,255,.6);font-weight: 300;}
 .ml-info .at-request{width:327px;float: left;float: left;padding: 15px;box-sizing:border-box;list-style: none;border-radius: 5px;border: 1px solid rgba(0,0,0,.2);background: white;margin: 0;margin-top: -25px;}
-.ml-info .at-request h3.QuestionDay{color:#135F94;font-size: 14px;}
-.ml-info .at-request p{color:black!important;font-size: 20px!important;}
+.ml-info .at-request em.QuestionDay{color:#135F94;font-size: 14px;margin-bottom: 15px;font-weight: 600;}
+.ml-info .at-request h1{color:black!important;font-size: 20px!important;font-weight: 500;}
 
+/*Barra de busqueda de la portada*/
 .search{width: 100%;background: #0C4369;padding: 10px 0;text-align: center;float: left;}
 .search form{display: inline-block;width: 650px;height: 50px;background: white;border-radius: 5px;overflow: hidden;}
 .search form input[type="text"]{width:calc(100% - 100px);float: left;border: none;height: 50px;line-height: 50px;padding-left: 115px;font-size: 16px;box-sizing:border-box;background: url('../img/search.png') 83px center no-repeat;outline: none;}
-.search form input[type="submit"]{width: 90px;height: 30px;line-height: 30px;text-transform: uppercase;color:#135F94;font-weight: bold;text-align: center;float: left;
+.search form button{width: 90px;height: 30px;line-height: 30px;text-transform: uppercase;color:#135F94;font-weight: bold;text-align: center;float: left;
 	border:none;border-left: 1px solid rgba(0,0,0,.4);background: white;margin-top: 10px;font-size: 14px;cursor: pointer;}
 
+/*Explicación de cómo funciona*/
 .how-works{padding: 50px 0;float: left;width: 100%;border-bottom: 1px solid #D5D5D5;}
-.how-works h2{float: left;width: 100%;text-align: center;font-size: 36px;font-weight: 400;margin-bottom: 40px;}
+.how-works > h1{float: left;width: 100%;text-align: center;font-size: 36px;font-weight: 400;margin-bottom: 40px;}
 .how-works ul{width: 1024px;margin: 0 auto;}
 .how-works li{float: left;width: calc(33.3333% - 40px);margin-left: 40px;list-style: none;}
 .how-works li:first-child{margin-left: 20px;}
 .how-works li h3{width: 56px;height: 56px;border-radius: 50%;line-height: 56px;text-align: center;font-size: 35px;color: white;background: #EC8C00;font-weight: 300;float: left;margin-right: 10px;}
-.how-works li h4{float: left;width: calc(100% - 67px);font-size: 24px;font-weight: 300;line-height: 30px;margin-bottom: 10px;}
+.how-works li h1{float: left;width: calc(100% - 67px);font-size: 24px;font-weight: 300;line-height: 30px;margin-bottom: 10px;}
 .how-works li p{float: left;margin-left: 67px;width: calc(100% - 67px);color: #9A9A9A;}
 
 .requests{width: 100%;padding: 50px 0;float: left;}
 .requests .cont-ml-request{width: 1024px;margin: 0 auto;}
-.cont-ml-request h2{float: left;width: 100%;font-size: 36px;font-weight: 400;margin-bottom: 40px;}
+.cont-ml-request > h1{float: left;width: 100%;font-size: 36px;font-weight: 400;margin-bottom: 40px;}
 .requests ul{width: 100%;float: left;}
 
 .ml-requests .at-request{width:calc(33.3333% - 14px);float: left;margin: 20px 0 0 20px;float: left;padding: 15px;box-sizing:border-box;list-style: none;border-radius: 5px;border: 1px solid rgba(0,0,0,.2);}
 .ml-requests .at-request:first-child,.ml-requests .at-request:nth-child(4){margin-left: 0;}
-.at-request h3{font-size: 16px;text-transform: uppercase;color:rgba(0,0,0,.4);width: 100%;float: left;margin-bottom: 10px;}
-.true{color:#69C768!important;}
-.false{color:#E98484!important;}
-.at-request p{color: black;font-size: 21px;text-align: left;width: 100%;line-height:26px;height: 78px;float: left;padding-bottom: 10px;overflow:hidden;border-bottom: 1px solid rgba(0,0,0,.2);margin-bottom: 15px;}
+
+/*Tarjeta de solicitud*/
+.at-request em{font-size: 16px;text-transform: uppercase;color:rgba(0,0,0,.4);width: 100%;float: left;margin-bottom: 10px;font-style: inherit;}
+.at-request h1{color: black;font-size: 21px;text-align: left;width: 100%;line-height:26px;height: 78px;float: left;padding-bottom: 10px;overflow:hidden;border-bottom: 1px solid rgba(0,0,0,.2);margin-bottom: 15px;}
 .at-request a{float: left;width: 120px;height: 35px;line-height: 35px;background: #C784E9;text-align: center;border-radius:28px;color: white;text-decoration: none;cursor:pointer;}
 .at-request a:hover{background:#B175D0;}
 .at-request h4{float: left;width: auto;line-height: 35px;color:#B175D0;margin-left: 20px;}
@@ -55,83 +68,110 @@ section.info{width: 100%;float: left;background:#135F94;padding: 45px 0;box-sizi
 .formulario .ml-info h1{float: left;width: 100%;color:white;font-size: 38px;font-weight: 300;text-align: center;margin-bottom: 20px;}
 .formulario .ml-info p{float: left;width: 100%;color: rgba(255,255,255,.4);font-size:24px;text-align: center;}
 .body-form{float: left;width: 100%;padding: 40px 0;}
-.body-form .msg-form{width: 500px;margin: 0 auto 40px auto;background: #CEE0EC;border-radius: 5px;padding: 15px;}
-.body-form .msg-form p{font-size: 18px;width: 100%;text-align: left;line-height: 22px;margin-bottom: 20px;}
-.body-form .msg-form input{float: left;margin-top: 2px;margin-right: 2px;}
-.body-form .msg-form label{color: rgba(0,0,0,.5);}
-.body-form form{width: 500px;margin: 0 auto;overflow: hidden;}
-.body-form form h3{width: 100%;float: left;color:rgba(0,0,0,.8);font-size:26px;font-weight: 300;margin-bottom: 20px;}
-.body-form form input[type="text"]{width: 100%;border:none;border-bottom: 1px solid rgba(0,0,0,.2);height: 35px;line-height: 35px;font-size: 18px;font-weight: 300;margin-bottom: 20px;outline: none;}
-.body-form form select{width: auto;padding: 0 40px 0 0px;font-weight: 300;font-size: 18px;height: 35px;line-height: 35px;
+
+/*Mensaje de uso del formulario*/
+.msg-form{width: 500px;margin: 0 auto 40px auto;background: #CEE0EC;border-radius: 5px;padding: 15px;}
+.msg-form p{font-size: 18px;width: 100%;text-align: left;line-height: 22px;margin-bottom: 20px;}
+.msg-form input{float: left;margin-top: 2px;margin-right: 2px;}
+.msg-form label{color: rgba(0,0,0,.5);}
+
+/*Formulario*/
+.form-solicitud{width: 500px;margin: 0 auto;overflow: hidden;}
+.form-solicitud h3{width: 100%;float: left;color:rgba(0,0,0,.8);font-size:26px;font-weight: 300;margin-bottom: 20px;}
+.form-solicitud input[type="text"]{width: 100%;border:none;border-bottom: 1px solid rgba(0,0,0,.2);height: 35px;line-height: 35px;font-size: 18px;font-weight: 300;margin-bottom: 20px;outline: none;}
+.form-solicitud select{width: auto;padding: 0 40px 0 0px;font-weight: 300;font-size: 18px;height: 35px;line-height: 35px;
 	border:none;border-bottom: 1px solid rgba(0,0,0,.2);outline: none;box-shadow: none!important;
 	border-radius: 0!important;-webkit-appearance:none;clear: both;background: white url('../img/triangle.png') 90% center no-repeat;margin-right:50%;max-width: 40%;margin-bottom: 20px;color: rgba(0,0,0,0.4);}
-.body-form textarea{width: 100%;padding: 10px;box-sizing:border-box;border:none;resize:none;background:rgba(0,0,0,.05);font-size: 18px;font-weight: 300;border-radius: 5px;margin-bottom: 20px;line-height: 22px;height: 88px;outline:none;}
-.body-form textarea.cuerpo{height: 122px;}
-.fakeinput{float: left;width: 100%;position: relative;height: 36px;margin-bottom: 20px;}
-.fakeinput p{width: 100%;border:none;border-bottom: 1px solid rgba(0,0,0,.2);height: 35px;line-height: 35px;font-size: 18px;font-weight: 300;margin-bottom: 20px;color: rgba(0,0,0,0.4);}
-.fakeinput input{position: absolute;right: -25px;top: 10px;opacity: 0;z-index: 2;cursor:pointer;}
-.fakeinput .seleccionar{position: absolute;right: 0;top: 10px;text-transform: uppercase;font-size: 16px;color: #EC8C00;font-weight: bold;cursor:pointer;}
+.form-solicitud textarea{width: 100%;padding: 10px;box-sizing:border-box;border:none;resize:none;background:rgba(0,0,0,.05);font-size: 18px;font-weight: 300;border-radius: 5px;margin-bottom: 20px;line-height: 22px;height: 88px;outline:none;}
+.form-solicitud textarea.cuerpo{height: 122px;}
+
+/*Representación de los adjuntos del formulario*/
 .assets{width: 100%;float: left;margin-bottom: 20px;}
 .assets li{width:180px;height: 30px;line-height: 30px;background:#A69ECC;border-radius: 15px;list-style: none;float: left;margin-right: 15px;padding: 0 15px;box-sizing:border-box;}
 .assets li:last-child{margin: 0;}
 .assets li span{color:white;font-weight: 300;float: left;}
 .assets li .delete{float: left;margin-right: 5px;height: 20px;width: 20px;text-align: center;background:rgba(0,0,0,.2);border-radius: 50%;margin-top: 5px;line-height: 19px;color:#A69ECC;cursor:pointer;}
-.body-form form .send{height: 50px;width: 195px;line-height: 50px;font-size: 18px;text-align: center;float: left;border-radius: 28px;text-decoration: none;color: white;background:#EC8C00;border: none;cursor:pointer;}
-.body-form form .send:hover{background: #D27D01;}
+
+/*Botón de enviar*/
+.form-solicitud .send{height: 50px;width: 195px;line-height: 50px;font-size: 18px;text-align: center;float: left;border-radius: 28px;text-decoration: none;color: white;background:#EC8C00;border: none;cursor:pointer;}
+.form-solicitud .send:hover{background: #D27D01;}
+
+/*Cover y popUp de ok al envio*/
 .cover{position: absolute;left: 0;top: 0;height: 100%;width: 100%;background: rgba(0,0,0,.3);display: none;}
 .cover .popUp{width: 580px;height: 325px;left: 50%;top:50%;margin-left: -290px;margin-top: -163px;position: absolute;background:white;border-radius: 10px;box-sizing:border-box;padding: 50px 30px 30px 145px;}
 .cover .popUp .tick{height: 72px;width: 72px;background: url('../img/tick.png') center no-repeat;float: left;margin-left: -80px;}
 .cover .popUp h3{font-size: 20px;font-size: 24px;margin-bottom: 15px;font-weight:400;}
 .cover .popUp p{width: 100%;float: left;margin-bottom: 20px;font-size: 18px;line-height: 20px;color:rgba(0,0,0,.5);}
 .cover .popUp a{width: 195px;height: 40px;line-height: 40px;box-sizing:border-box;padding: 0 15px;border-radius: 5px;float: left;color: white;}
-.twitter{float:left;margin-right: 10px;padding-left: 47px!important;background:#5EB5FF url('../img/twitter.png') 12px center no-repeat;}
-.facebook{float:left;padding-left: 30px!important;background:#5064B7 url('../img/facebook.png') 12px center no-repeat;}
+
+
 
 
 /*FICHA*/
-
-.clear{clear:both;}
 .ficha .info .ml-info{width: 800px;}
 .ficha .ml-info h1{float: left;width: 100%;color:white;font-size: 38px;font-weight: 300;text-align: center;margin-bottom: 20px;}
 .ficha .ml-info p{float: left;width: 100%;color: rgba(255,255,255,.4);font-size:20px;text-align: center;margin-bottom: 30px;}
+
 .cont-fichas{width: 100%;float: left;}
 .cont-fichas .cont-gen{width:1024px;margin: -60px auto 20px auto;border: 1px solid rgba(0,0,0,.2);border-radius: 5px;background: white;box-sizing:border-box;}
 .cont-fichas .ml-fichas{width: 68%;float: left;border-right:1px solid rgba(0,0,0,.2);box-sizing:border-box;}
-.ml-fichas article{padding: 20px;box-sizing:border-box;border-bottom:1px solid rgba(0,0,0,.2);float: left;padding:20px;}
-.ml-fichas article:last-child{border: none;}
-.ml-fichas article h3{text-transform: uppercase;color:#135F94;font-size: 16px;margin-bottom: 20px;}
-.ml-fichas article p{width: 100%; float: left;margin-bottom: 20px;text-align: justify;}
-.ml-fichas article a.enlace{width: 100%;float: left;margin-bottom: 20px;color:#D27D01;}
-.ml-fichas article a.verMas{float: left;padding: 0 20px;height: 35px;line-height: 35px;color:white;text-align: center;font-size: 18px;text-decoration: none;background:#EC8C00;border-radius: 20px;margin-right: 40%;margin-bottom: 20px;}
-.ml-fichas article a.verMas:hover{background: #D27D01;}
-.ml-fichas article.ayto{background: #F6F8EB;}
-.adjunto{float: left;padding: 0 20px 0 40px;border-radius: 15px;height: 35px;line-height: 35px;text-decoration: none;color: white;font-size: 14px;background: url('../img/download.png') 15px center no-repeat;}
-.ml-fichas .ayto .adjunto{background-color:#63674E;}
 
-.respuesta h3{width: 100%;float: left;color:rgba(0,0,0,.8);font-size:26px;font-weight: 300;margin-bottom: 20px;text-transform: inherit;}
+/*Seccion de mensajes*/
+.ml-fichas .at-ficha{padding: 20px;box-sizing:border-box;border-bottom:1px solid rgba(0,0,0,.2);float: left;padding:20px;}
+.ml-fichas .at-ficha:last-child{border: none;}
+.ml-fichas .at-ficha h1{text-transform: uppercase;color:#135F94;font-size: 16px;margin-bottom: 20px;}
+.ml-fichas .at-ficha p{width: 100%; float: left;margin-bottom: 20px;text-align: justify;}
+.ml-fichas .at-ficha a.enlace{width: 100%;float: left;margin-bottom: 20px;color:#D27D01;}
+.ml-fichas .at-ficha a.verMas{float: left;padding: 0 20px;height: 35px;line-height: 35px;color:white;text-align: center;font-size: 18px;text-decoration: none;background:#EC8C00;border-radius: 20px;margin-right: 40%;margin-bottom: 20px;}
+.ml-fichas .at-ficha a.verMas:hover{background: #D27D01;}
+.ml-fichas .at-ficha.ayto{background: #F6F8EB;}
+
+.adjunto{float: left;padding: 0 20px 0 40px;border-radius: 15px;height: 35px;line-height: 35px;text-decoration: none;color: white;font-size: 14px;background: url('../img/download.png') 15px center no-repeat;}
+.ml-fichas .at-ficha.ayto .adjunto{background-color:#63674E;}
+
+/*Formulario de respuesta*/
+.respuesta h2{width: 100%;float: left;color:rgba(0,0,0,.8);font-size:26px;font-weight: 300;margin-bottom: 20px;text-transform: inherit;}
 .respuesta textarea{width: 100%;padding: 10px;box-sizing:border-box;border:none;resize:none;background:rgba(0,0,0,.05);font-size: 18px;font-weight: 300;border-radius: 5px;margin-bottom: 20px;line-height: 22px;height: 144px;outline:none;}
 .respuesta form input[type="text"]{width: 100%;border:none;border-bottom: 1px solid rgba(0,0,0,.2);height: 35px;line-height: 35px;font-size: 18px;font-weight: 300;margin-bottom: 20px;outline: none;}
 .respuesta form .send{height: 50px;width: 195px;line-height: 50px;font-size: 18px;text-align: center;float: left;border-radius: 28px;text-decoration: none;color: white;background:#EC8C00;border: none;cursor:pointer;}
 .respuesta .send:hover{background: #D27D01;}
 
-.cont-fichas aside.info-bar{width: 32%;float: left;background:#F8FBFE;height: 100%;}
+
+/*Aside con los metadatos*/
+.cont-fichas .info-bar{width: 32%;float: left;background:#F8FBFE;height: 100%;}
 .info-bar > ul{float: left;width: 100%;padding:0 25px;box-sizing:border-box;}
 .info-bar ul li{float: left;width: 100%;border-bottom: 1px solid rgba(0,0,0,.2);list-style: none;padding: 20px 0;box-sizing:border-box;}
-.info-bar ul li h3{float: left;width: 100%;font-size: 14px;font-weight: bold;text-align: left;text-transform: uppercase;color:#135F94;margin-bottom: 15px;}
+.info-bar ul li h1{float: left;width: 100%;font-size: 14px;font-weight: bold;text-align: left;text-transform: uppercase;color:#135F94;margin-bottom: 15px;}
+/*Primer li*/
 .info-bar ul li .usuario{float: left;width: 48px;height: 48px;margin-right: 5px;}
 .info-bar ul li .nombreUsu{width:calc(100% - 70px);margin-top: 6px;font-weight: 400;}
-.info-bar ul li .dias{font-weight: 300;font-size: 45px;color:#EC8C00;}
+
+/*Segundo li*/
 .info-bar ul li a.verRespuesta{float: left;padding: 0 20px;height: 35px;line-height: 35px;color:white;text-align: center;font-size: 18px;text-decoration: none;background:#EC8C00;border-radius: 20px;}
 .info-bar ul li a.verRespuesta:hover{background: #D27D01;}
+
+/*Tercer li*/
+.info-bar ul li .dias{font-weight: 300;font-size: 45px;color:#EC8C00;}
+
+/*Cuarto li*/
+.info-bar ul li.docu-solicitud .adjunto{margin-bottom: 10px;border: 1px solid rgba(0,0,0,.1);box-sizing:border-box;background:#A69ECC url('../img/downloadPur.png') 15px center no-repeat;}
+
+/*Quinto li*/
+.info-bar ul li.docu-respuesta .adjunto{margin-bottom: 10px;border: 1px solid rgba(0,0,0,.3);box-sizing:border-box;color:rgba(0,0,0,.8);background:#F6F8EB url('../img/downloadGrey.png') 15px center no-repeat;}
+
+/*Sexto li*/
 .info-bar ul li.suscribirse a{float: left;width: 110px;height: 35px;line-height: 35px;background: #C784E9;text-align: center;border-radius:28px;color: white;text-decoration: none;cursor:pointer;}
 .info-bar ul li.suscribirse h4{float: left;width: auto;line-height: 35px;color:#B175D0;margin-left: 5px;font-size: 14px;}
+
+/*Septimo li*/
 .info-bar ul li.comparte a{width: 230px;height: 40px;line-height: 40px;box-sizing:border-box;padding: 0 15px;border-radius: 5px;float: left;color: white;text-decoration: none;}
 .info-bar ul li.comparte a.twitter{margin-bottom: 10px;}
-.docu-solicitud .adjunto{margin-bottom: 10px;border: 1px solid rgba(0,0,0,.1);box-sizing:border-box;background:#A69ECC url('../img/downloadPur.png') 15px center no-repeat;}
-.docu-respuesta .adjunto{margin-bottom: 10px;border: 1px solid rgba(0,0,0,.3);box-sizing:border-box;color:rgba(0,0,0,.8);background:#F6F8EB url('../img/downloadGrey.png') 15px center no-repeat;}
-.similares ul > li{padding:10px;box-sizing:border-box;border: 1px solid rgba(0,0,0,.2);margin-bottom: 20px;border-radius: 5px;background:white;}
-.similares h4{text-transform: uppercase;font-size: 13px;margin-bottom: 10px;}
-.similares p{font-size: 18px;}
+
+
+/*ultimo li*/
+.info-bar ul li.similares ul > li{padding:10px;box-sizing:border-box;border: 1px solid rgba(0,0,0,.2);margin-bottom: 20px;border-radius: 5px;background:white;}
+.info-bar ul li.similares h4{text-transform: uppercase;font-size: 13px;margin-bottom: 10px;}
+.info-bar ul li.similares p{font-size: 18px;}
 
 
 

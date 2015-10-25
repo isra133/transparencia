@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Formulario</title>
@@ -18,10 +18,13 @@
 			<div class="msg-form">
 				<p>Si realizas la solicitud de manera anónima no podrás reclamar de manera oficial una respuesta del Ayuntamiento de Madrid.</p>
 				<p>Te recomendamos que lo hagas usando tus datos de solicitante</p>
-				<input type="checkbox" id="acceptAnon">
-				<label for="acceptAnon">Quiero rellenar la solicitud anónimamente</label>
+				<div>
+					<input type="checkbox" id="acceptAnon">
+					<label for="acceptAnon">Quiero rellenar la solicitud anónimamente</label>
+				</div>
+				
 			</div>
-			<form action="">
+			<form action="" class="form-solicitud">
 				<h3>Datos del solicitante</h3>
 				<input type="text" placeholder="Nombre y apellidos">
 				<input type="text" placeholder="E-mail">
@@ -49,10 +52,10 @@
 				</ul>
 				<h3>Verificación y envío</h3>
 				<div class="captcha">
-						<img src="img/captcha.png" alt="Aqui va el captcha">
+					<img src="img/captcha.png" alt="Aqui va el captcha">
 				</div>
 				<input type="text" placeholder="Introduce el texto de la imagen">
-				<input type="submit" class="send" value="Envía tu solicitud">
+				<button type="submit" class="send">Envía tu solicitud</button>
 			</form>
 		</section>
 	</div>
